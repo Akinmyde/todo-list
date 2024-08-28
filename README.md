@@ -1,47 +1,45 @@
-# Getting Started with Create React App
+# React Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Build Status](https://img.shields.io/netlify/ea77f8bb-a275-41b2-ac8b-bced7d3a72b5.svg)
 
-## Available Scripts
+Welcome to the **React Todo List** project! This is a simple and intuitive task management application built using React, TypeScript, Redux Toolkit, and styled with modern CSS. The app allows users to add, edit, delete, and mark tasks as completed.
 
-In the project directory, you can run:
+You can view the live demo here: [React Todo List](https://procode-todo.netlify.app/)
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Add Todos**: Easily add new tasks to your todo list.
+- **Edit Todos**: Modify existing tasks with a simple interface.
+- **Delete Todos**: Remove tasks you no longer need to keep track of.
+- **Mark as Completed**: Toggle tasks between completed and incomplete states.
+- **Delete All**: Quickly remove all tasks at once.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Screenshots
 
-### `yarn test`
+![Todo List Screenshot](link-to-screenshot)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `yarn build`
+- **React**: For building the user interface.
+- **TypeScript**: For type-safe JavaScript code.
+- **Redux Toolkit**: For state management.
+- **React Testing Library**: For unit testing components.
+- **CSS**: For styling the application.
+- **Netlify**: For hosting the live application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v12 or later)
+- npm or Yarn
 
-### `yarn eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repository:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/your-username/react-todo-list.git
+   cd react-todo-list
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# todo-list
