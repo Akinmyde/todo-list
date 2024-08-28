@@ -29,14 +29,13 @@
   padding: 20px;
   border-radius: 4px;
   max-width: 500px;
-  width: 100%;
+  width: 80%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   transform: translateY(-50px);
   opacity: 0;
   animation: slideIn 0.3s forwards;
   color: white;
-
 }
 
 .close-modal {
@@ -100,7 +99,7 @@
 
 .todo-container {
   height: auto;
-  width: 614px;
+  width: 65%;
   border: 2px solid white;
   border-radius: 10px;
   margin: 20px;
@@ -170,12 +169,10 @@
 
 .App-header {
   background-color: #1A202B;
-  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }

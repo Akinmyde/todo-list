@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import ReactDOM from 'react-dom';
 
 type Props = {
@@ -13,25 +13,6 @@ type Props = {
 
 const Modal = ({ title, isOpen, acceptAction, closeAction, rejectValue, acceptValue, children }: Props) => {
     const modalRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const handleEscape = (event: KeyboardEvent) => {
-            if (event.key === 'Escape') {
-                closeAction();
-            }
-        };
-
-        if (isOpen) {
-            document.addEventListener('keydown', handleEscape);
-            if (modalRef.current) {
-                modalRef.current.focus(); // Focus the modal for accessibility
-            }
-        }
-
-        return () => {
-            document.removeEventListener('keydown', handleEscape);
-        };
-    }, [isOpen, closeAction]);
 
     if (!isOpen) return null
     return ReactDOM.createPortal(

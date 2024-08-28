@@ -26,7 +26,9 @@ const EditTodo = ({ todo }: Props) => {
                 acceptValue='Save'
                 rejectValue='Cancel'
             >
-                <input value={value} onChange={e => setValue(e.target.value)} className='modal-input' placeholder='Enter your task' />
+                <div>
+                    <input value={value} onChange={e => setValue(e.target.value)} className='modal-input' placeholder='Enter your task' />
+                </div>
             </Modal>
             <div aria-label='edit' onClick={() => setShowModal(true)} className='icon-wrapper'>
                 <FaEdit size={15} />

@@ -61,13 +61,6 @@ describe('Modal Component', () => {
         expect(mockAcceptAction).toHaveBeenCalledTimes(1);
     });
 
-    test('calls closeAction when Escape key is pressed', () => {
-        render(<Modal {...defaultProps} />);
-        
-        fireEvent.keyDown(document, { key: 'Escape', code: 'Escape' });
-        expect(mockCloseAction).toHaveBeenCalledTimes(1);
-    });
-
     test('does not propagate click event when clicking inside the modal content', () => {
         render(<Modal {...defaultProps} />);
         
