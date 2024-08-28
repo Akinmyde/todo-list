@@ -17,7 +17,7 @@ You can view the live demo here: [React Todo List](https://procode-todo.netlify.
 
 ## Screenshots
 
-![Todo List Screenshot](link-to-screenshot)
+![Todo List Screenshot](https://res.cloudinary.com/codeace/image/upload/v1724860112/Screenshot_2024-08-28_at_16.48.28.jpg)
 
 ## Technologies Used
 
