@@ -2,6 +2,161 @@
   text-align: center;
 }
 
+.h3 {
+  font-size: 72px;
+  background: linear-gradient(#e66465, #9198e5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.modal-content {
+  background-color: #2d3748;;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: slideIn 0.3s forwards;
+  color: white;
+
+}
+
+.close-modal {
+  width: 20px;
+  cursor: pointer;
+  background-color: #1A202B;
+  border-radius: 10px;
+  text-align: center;
+  font-size: large;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-input {
+  width: 95%;
+  height: 18px;
+  background-color:  #2d3748;
+  border-radius: 5px;
+  border: 1px solid #61dafb;
+  padding: 15px;
+  color: white;
+  font-size: medium;
+}
+
+.modal-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+.completed {
+  text-decoration:line-through;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+
+.icon-wrapper {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  background-color: #474B53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.todo-container {
+  height: auto;
+  width: 614px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 40px;
+  cursor: pointer;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.input {
+  background-color: #2C303B;
+  width: 200px;
+  height: 18px;
+  border-radius: 5px;
+  border: 1px solid #2C303B;
+  padding: 15px;
+  color: white;
+  font-size: medium;
+}
+
+.button {
+  width: 99.31px;
+  height: 46px;
+  margin: 10px;
+  background-color: #83CDF7;
+  border: 1px solid #83CDF7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: #1A202B;
+  color: white;
+  border: 1px solid #1A202B;
+
+}
+
+.delete-button {
+  background-color: #31363F;
+  width: 136px;
+}
+
+.danger {
+  color: red;
+}
+
+.error {
+  font-size: medium;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,12 +169,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1A202B;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
