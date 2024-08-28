@@ -10,12 +10,8 @@ const App = () => {
   const todos = useAppSelector(state => state.todos)
   const dispatch = useAppDispatch()
 
-
   const onAddToList = () => {
-    // const isTodoAdded = todos.find(todo => todo.name === todoValue)
-    // if (isTodoAdded) {
-    //   setError('You already added a todo with this value')
-    // } else 
+    // Ensure the user can't create an empty todo
     if (todoValue.length <= 0) {
       setError('Enter a name for your todo')
     } else {

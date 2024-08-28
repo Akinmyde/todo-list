@@ -1,3 +1,6 @@
+/* Using a single CSS file for now because of time. 
+Ideally, I will make use of tailwind css or styled component for better organization
+*/
 .App {
   text-align: center;
 }

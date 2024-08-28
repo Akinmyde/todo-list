@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
 import ReactDOM from 'react-dom';
+import React, { useRef } from "react";
 
 type Props = {
     isOpen: boolean;
@@ -14,6 +14,7 @@ type Props = {
 const Modal = ({ title, isOpen, acceptAction, closeAction, rejectValue, acceptValue, children }: Props) => {
     const modalRef = useRef<HTMLDivElement>(null);
 
+    // Making use of Portals to ensure that the modal component is rendered outside their parent to easyly manage visibility and behavior
     if (!isOpen) return null
     return ReactDOM.createPortal(
         <div className="modal-overlay" onClick={closeAction}>

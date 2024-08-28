@@ -1,9 +1,10 @@
 import { useState } from "react";
-import DeleteTodo from "./Delete";
+
 import EditTodo from "./Edit";
 import { Todo } from "../types";
-import { useAppDispatch } from "../redux/hooks";
+import DeleteTodo from "./Delete";
 import { deleteAll } from "../redux/reducers";
+import { useAppDispatch } from "../redux/hooks";
 
 type Props = {
     todos: Todo[];
@@ -17,6 +18,7 @@ const TodoList = ({ todos }: Props) => {
         setMarkAsDone(!markAsDone)
     }
 
+    // Only render the list of todos if atleast one is created.
     if (!todos.length) {
         return <></>
     }
@@ -36,7 +38,12 @@ const TodoList = ({ todos }: Props) => {
                 </div>
             ))}
             <div>
-                <button onClick={() => dispatch(deleteAll())} className='button delete-button danger'>Delete All</button>
+                <button
+                    onClick={() => dispatch(deleteAll())}
+                    className='button delete-button danger'
+                >
+                    Delete All
+                </button>
             </div>
         </>
     )
