@@ -25,7 +25,7 @@ const App = () => {
     <>
       <div className="App">
         <header className="App-header">
-          <h3 className='h3'>Procode Todo Lists</h3>
+          <h3 className='h3'>Todo Lists</h3>
           <div>
             <input required value={todoValue} onChange={e => setTodoValue(e.target.value)} className='input' placeholder='Enter your task' />
             <button onClick={onAddToList} className='button'>Add</button>

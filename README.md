@@ -5,7 +5,7 @@
 
 Welcome to the **React Todo List** project! This is a simple and intuitive task management application built using React, TypeScript, Redux Toolkit, and styled with modern CSS. The app allows users to add, edit, delete, and mark tasks as completed.
 
-You can view the live demo here: [React Todo List](https://procode-todo.netlify.app/)
+You can view the live demo here: [React Todo List](https://akinmyde-todo-list.netlify.app/)
 
 ## Features
 

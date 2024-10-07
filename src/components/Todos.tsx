@@ -22,9 +22,12 @@ const TodoList = ({ todos }: Props) => {
     if (!todos.length) {
         return <></>
     }
+
+    const newTodos = todos.concat().sort((a, b) => a.name.localeCompare(b.name)) 
+
     return (
         <>
-            {todos.map((todo, index) => (
+            {newTodos.map((todo, index) => (
                 <div key={index} className='todo-container'>
                     <div className='flex-container'>
                         <div onClick={toggleCompletion} >
