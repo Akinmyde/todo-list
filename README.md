@@ -15,10 +15,6 @@ You can view the live demo here: [React Todo List](https://akinmyde-todo-list.ne
 - **Mark as Completed**: Toggle tasks between completed and incomplete states.
 - **Delete All**: Quickly remove all tasks at once.
 
-## Screenshots
-
-![Todo List Screenshot](https://res.cloudinary.com/codeace/image/upload/v1724860112/Screenshot_2024-08-28_at_16.48.28.jpg)
-
 ## Technologies Used
 
 - **React**: For building the user interface.
